@@ -1,0 +1,125 @@
+{
+  "city": "Huancayo",
+  "promoted": true,
+  "reason": "No incumbent champion: first model is promoted.",
+  "version": "1",
+  "challenger_f1_macro": 0.9325139146567718,
+  "champion_f1_macro": null,
+  "baseline_f1_macro": 0.8132847560503424,
+  "min_delta": 0.005,
+  "n_trials": 30,
+  "seed": 42,
+  "data_source": "open-meteo",
+  "mlflow_run_id": "e8b3e4106ce4462cac335f251999c7b6",
+  "baseline": {
+    "accuracy": 0.9169530355097365,
+    "f1_macro": 0.8132847560503424,
+    "f1_per_class": {
+      "Good": 0.9524122087298983,
+      "Moderate": 0.6741573033707865,
+      "Unhealthy for Sensitive Groups": 0.0,
+      "Unhealthy": 0.0,
+      "Very Unhealthy": 0.0
+    },
+    "support": {
+      "Good": 1452,
+      "Moderate": 294,
+      "Unhealthy for Sensitive Groups": 0,
+      "Unhealthy": 0,
+      "Very Unhealthy": 0
+    },
+    "confusion_matrix": [
+      [
+        1451,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        144,
+        150,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "challenger": {
+    "accuracy": 0.9621993127147767,
+    "f1_macro": 0.9325139146567718,
+    "f1_per_class": {
+      "Good": 0.9772727272727273,
+      "Moderate": 0.8877551020408163,
+      "Unhealthy for Sensitive Groups": 0.0,
+      "Unhealthy": 0.0,
+      "Very Unhealthy": 0.0
+    },
+    "support": {
+      "Good": 1452,
+      "Moderate": 294,
+      "Unhealthy for Sensitive Groups": 0,
+      "Unhealthy": 0,
+      "Very Unhealthy": 0
+    },
+    "confusion_matrix": [
+      [
+        1419,
+        33,
+        0,
+        0,
+        0
+      ],
+      [
+        33,
+        261,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "champion": null
+}
