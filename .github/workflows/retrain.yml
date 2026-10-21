@@ -82,9 +82,3 @@ jobs:
             git push origin main
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-
-      - name: Redeploy (solo si hubo nuevo champion)
-        if: steps.train.outputs.promoted == 'true' && steps.commit.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh workflow run cd.yml --ref main
