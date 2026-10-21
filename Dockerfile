@@ -29,7 +29,7 @@ COPY --chown=user main.py .
 # HF Spaces espera el puerto 7860 (definido también en README.md: app_port: 7860)
 EXPOSE 7860
 HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \
-  CMD curl -fs http://localhost:7860/health || exit 1
+  CMD curl -fs http://localhost:${PORT:-10000}/health || exit 1
 
 # Cambia esta línea:
 # CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
